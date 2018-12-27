@@ -3,6 +3,9 @@ Description=Set Logitech G810 Led Profile
 
 [Service]
 ExecStart=/usr/bin/g810-led -p /etc/g810-led/profile
+PIDFile=$MAINPID
+TimeoutStopSec=2
+
 
 [Install]
 WantedBy=multi-user.target
